@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>KeyMoments</class>
+	<widget class="QDockWidget" name="KeyMoments">
+		<property name="contextMenuPolicy">
+			<enum>Qt::CustomContextMenu</enum>
+		</property>
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>873</width>
+				<height>280</height>
+			</rect>
+		</property>
+		<property name="floating">
+			<bool>true</bool>
+		</property>
+		<property name="features">
+			<set>QDockWidget::AllDockWidgetFeatures</set>
+		</property>
+		<property name="windowTitle">
+			<string>Key Moments</string>
+		</property>
+		<widget class="QWidget" name="dockWidgetContents">
+			<property name="contextMenuPolicy">
+				<enum>Qt::CustomContextMenu</enum>
+			</property>
+			<layout class="QVBoxLayout" name="verticalLayout_1">
+				<property name="spacing">
+					<number>0</number>
+				</property>
+				<property name="leftMargin">
+					<number>0</number>
+				</property>
+				<property name="topMargin">
+					<number>0</number>
+				</property>
+				<property name="rightMargin">
+					<number>0</number>
+				</property>
+				<property name="bottomMargin">
+					<number>0</number>
+				</property>
+				<item>
+					<widget class="QScrollArea" name="vScrollArea">
+						<property name="frameShape">
+							<enum>QFrame::StyledPanel</enum>
+						</property>
+						<property name="verticalScrollBarPolicy">
+							<enum>Qt::ScrollBarAlwaysOn</enum>
+						</property>
+						<property name="horizontalScrollBarPolicy">
+							<enum>Qt::ScrollBarAlwaysOff</enum>
+						</property>
+						<property name="widgetResizable">
+							<bool>true</bool>
+						</property>
+						<widget class="QWidget" name="vWidgets">
+							<property name="geometry">
+								<rect>
+									<x>0</x>
+									<y>0</y>
+									<width>71</width>
+									<height>16</height>
+								</rect>
+							</property>
+							<property name="sizePolicy">
+								<sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+									<horstretch>0</horstretch>
+									<verstretch>0</verstretch>
+								</sizepolicy>
+							</property>
+							<layout class="QVBoxLayout" name="verticalLayout">
+								<property name="spacing">
+									<number>1</number>
+								</property>
+								<item>
+									<widget class="QLabel">
+										<property name="alignment">
+											<enum>Qt::AlignHCenter</enum>
+										</property>
+										<property name="text">
+											<string>Order of Service</string>
+										</property>
+									</widget>
+								</item>
+								<item>
+									<layout class="QVBoxLayout" name="orderOfService">
+										<property name="spacing">
+											<number>1</number>
+										</property>
+									</layout>
+								</item>
+								<item>
+									<widget class="QPushButton" name="editAutoScenes">
+										<property name="text">
+											<string>Edit Auto-Scenes</string>
+										</property>
+									</widget>
+								</item>
+								<item>
+									<widget class="QLabel">
+										<property name="alignment">
+											<enum>Qt::AlignHCenter</enum>
+										</property>
+										<property name="text">
+											<string>Key Moments</string>
+										</property>
+									</widget>
+								</item>
+								<item>
+									<widget class="QPushButton">
+										<property name="text">
+											<string>Add Key-Moment</string>
+										</property>
+									</widget>
+								</item>
+								<item>
+									<widget class="QPushButton">
+										<property name="text">
+											<string>Set Current Scene</string>
+										</property>
+									</widget>
+								</item>
+								<item>
+									<widget class="QPushButton">
+										<property name="text">
+											<string>Copy Key-Moments</string>
+										</property>
+									</widget>
+								</item>
+								<item>
+									<widget class="QPushButton">
+										<property name="text">
+											<string>Reset Key-Moments</string>
+										</property>
+									</widget>
+								</item>
+							</layout>
+						</widget>
+					</widget>
+				</item>
+			</layout>
+		</widget>
+	</widget>
+	<customwidgets>
+		<!--<customwidget>
+			<class>MediaSlider</class>
+			<extends>QSlider</extends>
+			<header>media-slider.hpp</header>
+		</customwidget>-->
+	</customwidgets>
+	<connections/>
+</ui>

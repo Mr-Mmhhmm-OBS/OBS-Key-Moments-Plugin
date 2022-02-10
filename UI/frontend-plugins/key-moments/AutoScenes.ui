@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>AutoScenes</class>
+	<widget class="QDialog" name="AutoScenes">
+		<property name="windowTitle">
+			<string>Auto Scenes</string>
+		</property>
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>861</width>
+				<height>726</height>
+			</rect>
+		</property>
+		<layout class="QVBoxLayout" name="verticalLayout_1">
+			<property name="spacing">
+				<number>0</number>
+			</property>
+			<property name="leftMargin">
+				<number>0</number>
+			</property>
+			<property name="topMargin">
+				<number>0</number>
+			</property>
+			<property name="rightMargin">
+				<number>0</number>
+			</property>
+			<property name="bottomMargin">
+				<number>0</number>
+			</property>
+			<item>
+				<widget class="QScrollArea" name="vScrollArea">
+					<property name="frameShape">
+						<enum>QFrame::StyledPanel</enum>
+					</property>
+					<property name="verticalScrollBarPolicy">
+						<enum>Qt::ScrollBarAlwaysOn</enum>
+					</property>
+					<property name="horizontalScrollBarPolicy">
+						<enum>Qt::ScrollBarAlwaysOff</enum>
+					</property>
+					<property name="widgetResizable">
+						<bool>true</bool>
+					</property>
+					<widget class="QWidget" name="vWidgets">
+						<property name="geometry">
+							<rect>
+								<x>0</x>
+								<y>0</y>
+								<width>71</width>
+								<height>16</height>
+							</rect>
+						</property>
+						<property name="sizePolicy">
+							<sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+								<horstretch>0</horstretch>
+								<verstretch>0</verstretch>
+							</sizepolicy>
+						</property>
+						<layout class="QVBoxLayout" name="verticalLayout">
+							<property name="spacing">
+								<number>1</number>
+							</property>
+							<item>
+								<widget class="QLabel">
+									<property name="alignment">
+										<enum>Qt::AlignHCenter</enum>
+									</property>
+									<property name="text">
+										<string>Auto Scenes</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<layout class="QVBoxLayout" name="autoScenes">
+									<property name="spacing">
+										<number>1</number>
+									</property>
+								</layout>
+							</item>
+							<item>
+								<widget class="QPushButton" name="newAutoScene">
+									<property name="text">
+										<string>New Auto-Scene</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</widget>
+			</item>
+		</layout>
+	</widget>
+	<customwidgets>
+		<customwidget>
+			<class>AutoScene</class>
+			<extends>QWidget</extends>
+			<header>auto-scene.h</header>
+		</customwidget>
+	</customwidgets>
+</ui>
